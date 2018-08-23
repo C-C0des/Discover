@@ -57,9 +57,8 @@ $(document).ready(function () {
 
                bookDiv.append(title);
                bookDiv.append(bookImage);
-               bookDiv.append(description);
                bookDiv.append(p);
-
+               bookDiv.append(description);
                $("#results").prepend(bookDiv);
              
            
