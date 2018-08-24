@@ -44,7 +44,7 @@ $(document).ready(function () {
                
                var p = $("<p>").text("Rating: " + rating);
                var description = $("<p>").text("Description: " + desc);
-               var title = $("<p>").text("Title: " + bookName);
+               var title = $("<p>").text("Book Title: " + bookName);
  
                // Creating an image tag
                var bookImage = $("<img>").css({'width': '300px', 'height':'350', 'text-align': 'center'});;
@@ -59,7 +59,7 @@ $(document).ready(function () {
                bookDiv.append(bookImage);
                bookDiv.append(p);
                bookDiv.append(description);
-               $("#results").prepend(bookDiv);
+               $("#results").html(bookDiv);
              
            
          });

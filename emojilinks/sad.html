@@ -3,8 +3,9 @@
 
      <head>
          <meta charset="UTF-8">
-         <title>Sad</title>
+         <title>Angry</title>
          <link href="https://fonts.googleapis.com/css?family=Audiowide|Orbitron" rel="stylesheet">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
          <!-- Firebase Reference -->
          <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
          <link rel = "stylesheet" href = "../assets/css/linkstyle.css">
@@ -13,30 +14,67 @@
 
      <body>
          <align="left">
-             <a href="../index.html">
-                 <img src="../assets/images/home.png" alt="Home" class="image">
+             <a href="../home.html">
+                 <img src="../assets/images/moodfuselogo.png" alt="Home" class="image">
              </a>
          </align>
          <div class="content">
-              <p> “###.”   ― ###</p>
+              <p> “I'm not upset that you lied to me,  I'm upset that from now on I can't believe you.”   ― Friedrich Nietzsche </p>
               <div class="row">
                   <div class="column">
-                     <button data-mood= "sad" class="buttonyellow">Books</button>
+                       <img  data-mood = "sad" class = "buttonyellow" src = "../assets/images/library.png">
                  </div>
                  <div class="column">
-                     <button data-name="sad"class="buttonblue">Movies</button> 
+                       <img data-name = "sad" class = "buttonblue"src = "../assets/images/clapperboard.png">
                  </div>
                  <div class="column">
-                     <button class = "buttonred">Cocktails</button>
+                      <img  data-drink = "sad" class = "buttongreen" src = "../assets/images/wine-bottle.png">
                 </div>
                   </div>
              </div> 
-             <div class = "row" id = "movietitle"></div>
+             
              <div class = "center" id = "results" > </div>
          </div> 
+
+         <div>
+
+
+        <form id = "reviewform">
+                <div class="form-group">
+                   <label for="exampleInputEmail1">Email address</label>
+                   <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+     
+               <div class="form-group">
+                   <label for="exampleTextarea">Leave your review here!</label>
+                   <textarea class="form-control" id="ReviewTextarea" rows="3"></textarea>
+               </div>
+               <button type="submit" class="btn btn-primary review-submit">Submit</button>
+           </form>
+     
+           <!-- Current Reviews-->
+           <div class="card mb-4">
+             <div class="card-body">
+               <h3 class="card-title">Current Reviews</h3>
+               <table class="table table-sm table-hover" id='review-table'>
+                 <thead>
+                   <tr>
+                     <th scope="col">Customer Email</th>
+                     <th scope="col">Review</th>
+                    
+                   </tr>
+                 </thead>
+                 <tbody>
+                 </tbody>
+               </table>
+             </div>
+            </div>
+        </div>
 
          <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
          <script src = "../assets/javascript/movieapp.js"></script>
          <script src = "../assets/javascript/bookapp.js"></script>
+         <script src = "../assets/javascript/drinkapp.js"></script>
      </body>
 </html>

@@ -52,33 +52,33 @@
        }).then(function(response) {
          console.log(response);
 
-         /* var rImageResult = response.results;
+          var rImageResult = response.results;
          var randomImageResult = [Math.floor((Math.random()*rImageResult.length)+1)];
-         console.log(randomImageResult); */
+         console.log(randomImageResult); 
 
 
-         var genre = response.results
-         for (var i = 0; i < response.results.length;i++) {
+         //var genre = response.results
+         // for (var i = 0; i < response.results.length;i++) {
 
 
          //image result
-         var imageResult = config +'w300' + response.results[i].poster_path;
-         var movieDiv = $('<div class="movie col-md-4">');
-         var image = $("<img>").attr("src", imageResult).css({'width': '300px', 'height':'350', 'text-align': 'center'});
+         var rImageResult = config +'w300' + response.results[randomImageResult].poster_path;
+         var movieDiv = $('<div class="movie">');
+         var image = $("<img>").attr("src", rImageResult);
          
          //movie title
-         var movieTitle = response.results[i].title;
-         var movieHeaderTitle = $("<h3>").text(movieTitle).css('text-align', 'center' );
+         var movieTitle = response.results[randomImageResult].title;
+         var movieHeaderTitle = $("<p>").text("Movie Title: " + movieTitle).css('text-align', 'center' );
 
          //movie rating - not available in the response
          //var rating = response.;
 
          // movie vote average 
-         var voteAverage = response.results[i].vote_average;
+         var voteAverage = response.results[randomImageResult].vote_average;
          var voteaverageRated = $("<p>").text("Rating: " + voteAverage);
 
          //var overview
-         var overview = response.results[i].overview;
+         var overview = response.results[randomImageResult].overview;
          var overviewText = $("<p>").text("Plot: " + overview);
 
          //var genre = response.results.id;
@@ -91,16 +91,64 @@
          movieDiv.append(voteaverageRated);
          movieDiv.append(overviewText);
          
-         $("#results").prepend(movieDiv);
+         $("#results").html(movieDiv);
          // $("#moviestitle").append(genre);
         
-           }
+           
 
        });
   
 
 
       });
+
+
+
+   $(".review-submit").on("click", function(event){
+    event.preventDefault();
+    // Grabs user input
+    var userEmail = $("#InputEmail").val().trim();
+    var userReview = $("#ReviewTextarea").val().trim();
+
+    // Pushing to database
+database.ref().push({
+userEmail: userEmail,
+userReview: userReview
+});
+
+console.log(userEmail);
+console.log(userReview);
+
+// Clears all of the text-boxes
+$("#InputEmail").val("");
+$("#ReviewTextarea").val("");
+
+});
+// Create Firebase event for adding user email and review to the database and a row in the html when a user adds an entry
+database.ref().on("child_added", function(childSnapshot) {
+console.log(childSnapshot.val());
+
+// Store everything into a variable.
+var newuserEmail = childSnapshot.val().userEmail;
+var newuserReview = childSnapshot.val().userReview;
+
+
+// User Info
+console.log(newuserEmail);
+console.log(newuserReview);
+
+
+
+// Create the new row
+var newRow = $("<tr>").append(
+  $("<td>").text(newuserEmail),
+  $("<td>").text(newuserReview),
+  
+);
+
+// Append the new row to the table
+$("#review-table > tbody").append(newRow);
+});
 
      });
 
