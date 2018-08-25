@@ -55,8 +55,8 @@ p{
 
 
 #results{
-    color:black;
-    background:rgb(231, 230, 229);
+    color:white;
+    background:black;
 }
 
 .center{
@@ -165,8 +165,8 @@ p{
 #startBtn {
     margin-top: 15px;
     width: 100px;
-    color:rgb(107, 176, 255);
-    border: 3px solid rgb(107, 176, 255);
+    color:black;
+    border: 3px solid black;
     padding: 15px;
     font-weight: bold;
     letter-spacing: 4px;
@@ -174,7 +174,7 @@ p{
   }
   
   #startBtn:hover {
-    background-color: rgb(107, 176, 255);
+    background-color: black;
     color:white;
     border: 3px solid white;
     color:white

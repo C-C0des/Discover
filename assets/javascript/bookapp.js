@@ -34,10 +34,10 @@ var randomResult = [Math.floor((Math.random() * results.length) + 1)]
              
              var p = $("<p>").text("Rating: " + rating);
              var description = $("<p>").text("Description: " + desc);
-             var title = $("<p>").text("Title: " + bookName);
+             var title = $("<h3>").text(bookName);
 
              // Creating an image tag
-             var bookImage = $("<img>");
+             var bookImage = $("<img>").css({'width' : '350px' , 'height' : '350px'});
 
              // Giving the image tag an src attribute of a proprty pulled off the
              // result item
@@ -46,9 +46,9 @@ var randomResult = [Math.floor((Math.random() * results.length) + 1)]
 
 
              bookDiv.append(title);
-             bookDiv.append(description);
-             bookDiv.append(p);
              bookDiv.append(bookImage);
+             bookDiv.append(p);
+             bookDiv.append(description);
 
              $("#results").html(bookDiv);
            

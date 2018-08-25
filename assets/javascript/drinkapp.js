@@ -38,10 +38,10 @@ var randomResult = [Math.floor((Math.random() * results.length))]
              var ingredient1 = $("<p>").text("Ingredient 1: " + ing1);
              var ingredient2 = $("<p>").text("Ingredient 2: " + ing2);
              var ingredient3 = $("<p>").text("Ingredient 3: " + ing3);
-             var title = $("<p>").text("Title: " + drinkName);
+             var title = $("<h3>").text(drinkName);
 
              // Creating an image tag
-             var drinkImage = $("<img>");
+             var drinkImage = $("<img>").css({'width' : '350px' , 'height' : '350px'});
 
              // Giving the image tag an src attribute of a proprty pulled off the
              // result item

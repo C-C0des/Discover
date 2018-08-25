@@ -5,15 +5,20 @@
          <meta charset="UTF-8">
          <title>Angry</title>
          <link href="https://fonts.googleapis.com/css?family=Audiowide|Orbitron" rel="stylesheet">
-         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
          <!-- Firebase Reference -->
          <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
          <link rel = "stylesheet" href = "../assets/css/linkstyle.css">
          <link rel="shortcut icon" type="image/png" href="../assets/images/favicon.png">
+         <!-- Latest compiled and minified CSS -->
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+         <!-- Optional theme -->
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+         <!-- Latest compiled and minified JavaScript -->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
      </head>
 
      <body>
-     <!--Start Navbar-->
+    <!--Start Navbar-->
      <nav class="navbar fixed-top navbar-default" id="masthead">
         <div class="container">
               <div class="navbar-header">
@@ -42,6 +47,7 @@
                 </div>    
           </div>
      </nav> <!--End Navbar-->
+       
          <div class="content">
               <p> “I'm not upset that you lied to me,  I'm upset that from now on I can't believe you.”   ― Friedrich Nietzsche </p>
               <div class="row">
@@ -59,61 +65,58 @@
              
              <div class = "center" id = "results" > </div>
          </div> 
+      
 
-         <div>
-
-
-          
          
          <div class = "col-md-12 text-center"> 
-                <a href = "../home.html"><h3 class = "moodlink">Pick another mood</h3></a>
-          </div>
-          <form id = "reviewform ">
-              <div class="col-md-12 text-center">
-                  <h5>or</h5>
-                  <h3> Submit a Review </h3>
-                  <br>
-                  <p>Share your thoughts with our other customers by submitting a written review. Thank you</p>           
-              </div>
-              <div class="form-group text-center">
-                  <label for="exampleInputEmail1">Email address</label>
-                  <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email">
-                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-              </div>
-      
-              <div class="form-group text-center">
-                  <label for="exampleTextarea">Leave your review here!</label>
-                  <textarea class="form-control" id="ReviewTextarea" rows="3"></textarea>
-              </div>
-              <div class = "buttonwrapper">
-                  <button type="submit" class="btn review-submit" id = "startBtn">Submit</button>
-              </div>
-                <br>
-                <br>
-            </form>
-      
-            <!-- Current Reviews-->
-            <div class="card mb-4 text-center">
-              <div class="card-body">
-                <h4 class="card-title">Current Reviews</h4>
-                <table class="table table-sm table-hover" id='review-table'>
-                  <thead>
-                    <tr>
-                      <th scope="col">Customer Email</th>
-                      <th scope="col">Review</th>
-                     
-                    </tr>
-                  </thead>
-                  <tbody>
-                  </tbody>
-                </table>
-              </div>
-             </div>
+               <a href = "../home.html">
+                   <h3 class = "moodlink">Pick another mood</h3>
+              </a>
+              <h5>or</h5>
+             <h3>Submit a review</h3>
          </div>
- 
+         <!-- Form for asking user reviews -->
+        <form id = "reviewform">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        
+        
+        
+        <div class="form-group">
+          <label for="exampleTextarea">Leave your review here!</label>
+          <textarea class="form-control" id="ReviewTextarea" rows="3"></textarea>
+        </div>
+        
+        
+        
+        <button type="submit" class="btn review-submit" id = "startBtn">Submit</button>
+      </form>
+<!-- Current Reviews-->
+<div class="card mb-4">
+        <div class="card-body">
+          <h3 class="card-title">Current Reviews</h3>
+          <table class="table table-sm table-hover" id='review-table'>
+            <thead>
+              <tr>
+                <th scope="col">Customer Email</th>
+                <th scope="col">Review</th>
+               
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+      </div>
+       
+
          <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
          <script src = "../assets/javascript/movieapp.js"></script>
          <script src = "../assets/javascript/bookapp.js"></script>
          <script src = "../assets/javascript/drinkapp.js"></script>
+         <script src = "../assets/javascript/firebase.js"></script>
      </body>
 </html>

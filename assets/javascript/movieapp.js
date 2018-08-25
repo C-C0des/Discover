@@ -70,7 +70,7 @@
          
          //movie title
          var movieTitle = response.results[randomImageResult].title;
-         var movieHeaderTitle = $("<p>").text("Movie Title: " + movieTitle).css('text-align', 'center' );
+         var movieHeaderTitle = $("<h3>").text(movieTitle).css('text-align', 'center' );
 
          //movie rating - not available in the response
          //var rating = response.;
