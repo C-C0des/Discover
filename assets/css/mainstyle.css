@@ -1,4 +1,124 @@
-.navbar-brand{
-    color:white;
+/* START NAV */
+#masthead {
+    background-color: #fff;
+    background: #ffffff;
+    border-bottom:1px solid #cccccc;
+    margin-bottom:0;
+  }
+  
+  #logo {
+    padding-top:0;
+    padding-bottom: 20px;
+    height:78px;
+    margin-top:5px;
+    font-size:28px;
+    font-weight: bold;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-weight:bold;
+    text-align:center;
+    color: #ffffff;
+  }
+  
+  .navbar-right{
+    padding-top: 30px;
+    padding-right: 35px;
+    font-family: 'Arial';
+  }
+  
+  /* still need to fix border height*/
+  ul li a {
+    text-decoration: none;
+    margin-top:10px;
+    line-height: 0px;
+    font-size: 16px;
+  }
+  
+  nav ul li:first-child a {
+    border-left:0;
+  }
 
+  /*======================
+       SEARCH BUTTON
+  ========================*/
+
+  .search-box-wrapper {
+    display: inline-flex;
+    font-size: 18px;
 }
+
+.search-box-input {
+    font-size: inherit;
+    border: 0.09em solid black;
+    border-radius: 0.5em 0 0 0.5em;
+    padding: 0.2em 0.5em;
+    outline: 0;
+}
+
+.search-box-input:hover,
+.search-box-input:focus {
+    border-color:black;
+}
+
+.search-box-button {
+    font-size: inherit;
+    border: 0.09em solid black;
+    border-radius: 0 0.5em 0.5em 0;
+    background-color:white;
+    border-left: 0;
+    padding: 0 0.75em;
+    color: white;
+    font-weight: bold;
+    outline: 0;
+    cursor: pointer;
+}
+
+.search-box-button:hover,
+.search-box-button:focus {
+    border-color:black;
+    background-color: black;
+}
+
+.glyphicon-search{
+    color:black;
+}
+
+.glyphicon-search:hover,
+.glyphicon-search:focus{
+    color:white;
+}
+
+
+  /*--------NAV END----------*/
+
+  #startBtn {
+    margin-top: 30px;
+    width: 300px;
+    background-color: black;
+    color:white;
+    border: 3px solid white;
+    padding: 20px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-size: 20px;
+  }
+  
+  #startBtn:hover {
+    background-color: black;
+    color:white;
+    border: 3px solid white;
+    border: 3px solid black;
+    background-color: white;
+    color:black;
+  }
+  
+
+
+
+  /**************************************
+  MF LOGO INFO:
+     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+     width="100" height="100"
+     viewBox="0 0 252 252"
+     style="fill:#000000;"><g transform=""><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="#ffffff"></path><g fill="#000000"><path d="M126,10.08c-63.90145,0 -115.92,52.01855 -115.92,115.92c0,63.90145 52.01855,115.92 115.92,115.92c63.90145,0 115.92,-52.01855 115.92,-115.92c0,-63.90145 -52.01855,-115.92 -115.92,-115.92zM126,30.24c53.00618,0 95.76,42.75382 95.76,95.76c0,53.00618 -42.75382,95.76 -95.76,95.76c-53.00618,0 -95.76,-42.75382 -95.76,-95.76c0,-53.00618 42.75382,-95.76 95.76,-95.76z"></path></g><g fill="#000000"><path d="M48.505,84.055h14.29l27.42,68.45l27.43,-68.45h14.34v83.89h-11.06v-32.67l1.04,-35.26l-27.54,67.93h-8.47l-27.48,-67.76l1.09,35.09v32.67h-11.06zM197.785,121.855v9.04h-35.2v37.05h-11.06v-83.89h51.97v9.1h-40.91v28.7z"></path></g></g></g></svg>
+
+  **************************************/
