@@ -1,7 +1,8 @@
 $(document).ready(function () {
    
-    // Initialize Firebase
+    // Initialize Firebase for user reviews
     var config = {
+      
        apiKey: "AIzaSyASQ8jBTorfDSw2R15DJuRl8qXgnxXOAh0",
        authDomain: "moodfuse-afb60.firebaseapp.com",
        databaseURL: "https://moodfuse-afb60.firebaseio.com",
