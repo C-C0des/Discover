@@ -25,17 +25,21 @@
     font-family: 'Arial';
   }
   
-  /* still need to fix border height*/
-  ul li a {
+ #links {
     text-decoration: none;
-    margin-top:10px;
-    line-height: 0px;
-    font-size: 16px;
+    color: white;
+    font-size: 14px;
   }
+  .fa{
+      font-size:20px;
+  }
+  .linkspace{
+      padding-top:9px;
+  }
+
   
-  nav ul li:first-child a {
-    border-left:0;
-  }
+
+  
 
   /*======================
        SEARCH BUTTON
