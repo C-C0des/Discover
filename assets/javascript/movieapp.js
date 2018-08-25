@@ -1,5 +1,20 @@
 
    $(document).ready(function () {
+
+        // Initialize Firebase
+        var config = {
+       apiKey: "AIzaSyASQ8jBTorfDSw2R15DJuRl8qXgnxXOAh0",
+       authDomain: "moodfuse-afb60.firebaseapp.com",
+       databaseURL: "https://moodfuse-afb60.firebaseio.com",
+       projectId: "moodfuse-afb60",
+       storageBucket: "moodfuse-afb60.appspot.com",
+       messagingSenderId: "163903846814"
+       };
+      firebase.initializeApp(config);
+
+      var database = firebase.database();
+
+
     // Base url for main API call
     var apiBaseURL = "https://api.themoviedb.org/3/configuration?api_key=56f6c2183bfbb1abccc25877c84a0b7e";
     /* Base Url for the image poster

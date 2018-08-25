@@ -9,9 +9,9 @@ $(document).ready(function () {
 //        storageBucket: "moodfuse-afb60.appspot.com",
 //        messagingSenderId: "163903846814"
 //      };
-//      firebase.initializeApp(config);
+  firebase.initializeApp(config);
 
-//  var database = firebase.database();
+ var database = firebase.database();
 
    $(".buttongreen").on("click", function() {
 

@@ -13,11 +13,35 @@
      </head>
 
      <body>
-         <align="left">
-             <a href="../home.html">
-                 <img src="../assets/images/moodfuselogo.png" alt="Home" class="image">
-             </a>
-         </align>
+     <!--Start Navbar-->
+     <nav class="navbar fixed-top navbar-default" id="masthead">
+        <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <div class= "col-xs-12 col-sm-12">
+                    <a class="navbar-brand" href="../index.html" id="logo"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                      width="75" height="75"
+                      viewBox="0 0 252 252"
+                      style="fill:#000000;"><g transform=""><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="#ffffff"></path><g fill="#000000"><path d="M126,10.08c-63.90145,0 -115.92,52.01855 -115.92,115.92c0,63.90145 52.01855,115.92 115.92,115.92c63.90145,0 115.92,-52.01855 115.92,-115.92c0,-63.90145 -52.01855,-115.92 -115.92,-115.92zM126,30.24c53.00618,0 95.76,42.75382 95.76,95.76c0,53.00618 -42.75382,95.76 -95.76,95.76c-53.00618,0 -95.76,-42.75382 -95.76,-95.76c0,-53.00618 42.75382,-95.76 95.76,-95.76z"></path></g><g fill="#000000"><path d="M48.505,84.055h14.29l27.42,68.45l27.43,-68.45h14.34v83.89h-11.06v-32.67l1.04,-35.26l-27.54,67.93h-8.47l-27.48,-67.76l1.09,35.09v32.67h-11.06zM197.785,121.855v9.04h-35.2v37.05h-11.06v-83.89h51.97v9.1h-40.91v28.7z"></path></g></g></g></svg></a>
+                   </div>
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                  <li>
+                      <div class="search-box-wrapper">
+                          <input type="text" placeholder="Search MoodFuse" class="search-box-input">
+                          <button class="search-box-button"><i class="glyphicon glyphicon-search"></i> </button>
+                      </div>
+                  </li>      
+                  </ul>
+                </div>    
+          </div>
+     </nav> <!--End Navbar-->
          <div class="content">
               <p> “I'm not upset that you lied to me,  I'm upset that from now on I can't believe you.”   ― Friedrich Nietzsche </p>
               <div class="row">
@@ -39,39 +63,54 @@
          <div>
 
 
-        <form id = "reviewform">
-                <div class="form-group">
-                   <label for="exampleInputEmail1">Email address</label>
-                   <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+          
+         
+         <div class = "col-md-12 text-center"> 
+                <a href = "../home.html"><h3 class = "moodlink">Pick another mood</h3></a>
+          </div>
+          <form id = "reviewform ">
+              <div class="col-md-12 text-center">
+                  <h5>or</h5>
+                  <h3> Submit a Review </h3>
+                  <br>
+                  <p>Share your thoughts with our other customers by submitting a written review. Thank you</p>           
+              </div>
+              <div class="form-group text-center">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email">
                   <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                </div>
-     
-               <div class="form-group">
-                   <label for="exampleTextarea">Leave your review here!</label>
-                   <textarea class="form-control" id="ReviewTextarea" rows="3"></textarea>
-               </div>
-               <button type="submit" class="btn btn-primary review-submit">Submit</button>
-           </form>
-     
-           <!-- Current Reviews-->
-           <div class="card mb-4">
-             <div class="card-body">
-               <h3 class="card-title">Current Reviews</h3>
-               <table class="table table-sm table-hover" id='review-table'>
-                 <thead>
-                   <tr>
-                     <th scope="col">Customer Email</th>
-                     <th scope="col">Review</th>
-                    
-                   </tr>
-                 </thead>
-                 <tbody>
-                 </tbody>
-               </table>
+              </div>
+      
+              <div class="form-group text-center">
+                  <label for="exampleTextarea">Leave your review here!</label>
+                  <textarea class="form-control" id="ReviewTextarea" rows="3"></textarea>
+              </div>
+              <div class = "buttonwrapper">
+                  <button type="submit" class="btn review-submit" id = "startBtn">Submit</button>
+              </div>
+                <br>
+                <br>
+            </form>
+      
+            <!-- Current Reviews-->
+            <div class="card mb-4 text-center">
+              <div class="card-body">
+                <h4 class="card-title">Current Reviews</h4>
+                <table class="table table-sm table-hover" id='review-table'>
+                  <thead>
+                    <tr>
+                      <th scope="col">Customer Email</th>
+                      <th scope="col">Review</th>
+                     
+                    </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+                </table>
+              </div>
              </div>
-            </div>
-        </div>
-
+         </div>
+ 
          <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
          <script src = "../assets/javascript/movieapp.js"></script>
          <script src = "../assets/javascript/bookapp.js"></script>

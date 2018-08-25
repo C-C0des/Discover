@@ -64,3 +64,136 @@ p{
     margin-right:auto;
     display:block;
 }
+
+
+
+/*Nav*/
+
+/* START NAV */
+#masthead {
+    background-color: #fff;
+    background: #ffffff;
+    border-bottom:1px solid #cccccc;
+    margin-bottom:0;
+  }
+  
+  #logo {
+    padding-top:0;
+    padding-bottom: 20px;
+    height:78px;
+    margin-top:5px;
+    font-size:28px;
+    font-weight: bold;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-weight:bold;
+    text-align:center;
+    color: #ffffff;
+  }
+  
+  .navbar-right{
+    padding-top: 30px;
+    padding-right: 35px;
+    font-family: 'Arial';
+  }
+  
+ #links {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+  }
+  .fa{
+      font-size:20px;
+  }
+  .linkspace{
+      padding-top:9px;
+  }
+
+  
+
+  
+
+  /*======================
+       SEARCH BUTTON
+  ========================*/
+
+  .search-box-wrapper {
+    display: inline-flex;
+    font-size: 18px;
+}
+
+.search-box-input {
+    font-size: inherit;
+    border: 0.09em solid black;
+    border-radius: 0.5em 0 0 0.5em;
+    padding: 0.2em 0.5em;
+    outline: 0;
+}
+
+.search-box-input:hover,
+.search-box-input:focus {
+    border-color:black;
+}
+
+.search-box-button {
+    font-size: inherit;
+    border: 0.09em solid black;
+    border-radius: 0 0.5em 0.5em 0;
+    background-color:white;
+    border-left: 0;
+    padding: 0 0.75em;
+    color: white;
+    font-weight: bold;
+    outline: 0;
+    cursor: pointer;
+}
+
+.search-box-button:hover,
+.search-box-button:focus {
+    border-color:black;
+    background-color: black;
+}
+
+.glyphicon-search{
+    color:black;
+}
+
+.glyphicon-search:hover,
+.glyphicon-search:focus{
+    color:white;
+}
+
+#startBtn {
+    margin-top: 15px;
+    width: 100px;
+    color:rgb(107, 176, 255);
+    border: 3px solid rgb(107, 176, 255);
+    padding: 15px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-size: 14px;
+  }
+  
+  #startBtn:hover {
+    background-color: rgb(107, 176, 255);
+    color:white;
+    border: 3px solid white;
+    color:white
+  }
+
+  .moodlink{
+      text-decoration: none;
+      color:black;
+  }
+
+  .buttonwrapper{
+      text-align:center;
+  }
+
+  #results{
+      text-align:center;
+  }
+
+  
+
+
+
