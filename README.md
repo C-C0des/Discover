@@ -15,9 +15,9 @@ MoodFuse is a web based app that allows its users to express their emotions via 
 
 
 ## Contributors
-* Christine Lanlokun
-* Smriti Sharma 
-* Nerise Aiel
+* Christine L
+* Smriti S
+* Nerise A
 
 
 ## Deployment
