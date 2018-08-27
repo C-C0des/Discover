@@ -28,7 +28,9 @@ img {
   align-content: left;
   width: 140px;
   height: 135px;
+  cursor: pointer;
 }
+
 .zoom {
   padding: 10px;
     transition: transform .2s;

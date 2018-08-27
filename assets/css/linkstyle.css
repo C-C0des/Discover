@@ -207,6 +207,9 @@ p{
       text-align:center;
   }
 
+  #recobutton{
+      cursor: pointer;
+  }
  
 
 
