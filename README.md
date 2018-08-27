@@ -7,7 +7,7 @@ MoodFuse is a web based app that displays recommendations for movies, books, and
 ## Future Functionality
 MoodFuse is a web based app that allows its users to express their emotions via moodboards (collages)... 
 
-## Technology
+## Technologies
 * HTML, CSS and Bootstrap 
 * JavaScript and jQuery
 * AJAX
