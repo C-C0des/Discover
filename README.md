@@ -1,10 +1,7 @@
 # Artiste [ UT Coding Boot Camp: Project #1 ]
 
 ## Current Functionality
-Artsite is a web based app that allows its users to express their emotions via moodboards (collages)... 
-
-## Previous Functionality
-MoodFuse (currently named Artiste) is a web based app that displays recommendations for movies, books, and cocktails based on the mood that the user selects. Users can also share their thoughts on the recommendations, as well as view reviews from other users.  
+A mood board app for the Gen Z artist. Artsite is a web based app that allows its users to express their emotions via moodboards (collages)... 
 
 ## Technologies
 * HTML, CSS and Bootstrap 
