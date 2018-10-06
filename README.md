@@ -1,4 +1,4 @@
-# Artiste UT Coding Boot Camp: Project #1 
+# Artiste [ UT Coding Boot Camp: Project #1 ]
 
 ## Current Functionality
 Artsite is a web based app that allows its users to express their emotions via moodboards (collages)... 
