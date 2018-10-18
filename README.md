@@ -17,4 +17,4 @@ MoodFuse is a web based app that displays recommendations for movies, books, and
 
 
 ## Deployment
-https://C-C0des.github.io/Project1-MoodFuse/
+https://c-c0des.github.io/MoodFuse/
