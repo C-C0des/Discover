@@ -24,10 +24,17 @@ h1{
 }
 
 
-img {
-  align-content: left;
-  width: 140px;
-  height: 135px;
+
+.links{
+    text-decoration: none;
+    width: 600px;
+    background-color: black;
+    color:white;
+    border: 3px solid white;
+    padding: 20px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-size: 20px;
 }
 
 .zoom {
@@ -58,10 +65,3 @@ img {
   bottom: 0;
 }
 
- /* #myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
-} */
