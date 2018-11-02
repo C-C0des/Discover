@@ -10,11 +10,5 @@ Disover is a web based app that displays recommendations for movies, books, and 
 * Firebase
 
 
-## Contributors
-* Christine L
-* Smriti S
-* Nerise A
-
-
 ## Deployment
 https://c-c0des.github.io/MoodFuse/
