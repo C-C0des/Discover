@@ -1,6 +1,6 @@
 # Discover [ UT Coding Boot Camp: Project #1 ]
 
-## Current Functionality
+## Functionality
 Disover is a web based app that displays recommendations for movies, books, and more. Users can also share their thoughts on the recommendations, as well as view reviews from other users.  
 
 ## Technologies
@@ -9,6 +9,5 @@ Disover is a web based app that displays recommendations for movies, books, and 
 * AJAX
 * Firebase
 
-
 ## Deployment
-https://c-c0des.github.io/MoodFuse/
+https://c-c0des.github.io/Discover/
